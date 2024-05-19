@@ -1,12 +1,10 @@
-import "./style.css";
-
 document.querySelector("#app").innerHTML = `
 <div class="wrapper">
   
   <div class="scroll-cards">
 
 <img src="https://media.licdn.com/dms/image/C5603AQHLuMVNspYM8Q/profile-displayphoto-shrink_800_800/0/1564565814591?e=2147483647&v=beta&t=2SCbgzmhIf11HDpHWLJYqsV9YpPUhrqTGbO-Z8gNlZA" width="250" height="250" border="5px" class="profile">
-<h1>Hey, I'm Sijin!</h1>
+<h1 class="shadow">Hey, I'm Sijin!</h1>
 
     <article class="scroll-cards__item" aria-label="Wie - 1">
       <h2>Nice little headline</h2>
