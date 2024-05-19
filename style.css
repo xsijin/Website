@@ -25,7 +25,7 @@ a {
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #90553f;
 }
 
 body {
@@ -56,7 +56,7 @@ h2 {
 }
 
 p {
-  font-size: 1.25em;
+  font-size: 0.9em;
   line-height: 1.5;
 }
 
@@ -76,7 +76,7 @@ p {
     justify-content: center;
     width: 2.75em;
     height: 2.75em;
-    background: #90553F;
+    background: #90553f;
     color: #fff;
     text-align: center;
     border-radius: 50%;
@@ -94,6 +94,20 @@ p {
   .scroll-cards__item {
     --offset: 1.25em;
     max-width: 42em;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  h1 {
+    font-size: 1em;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  p {
+    font-size: 0.8em;
   }
 }
 
@@ -208,10 +222,27 @@ p {
   font-optical-sizing: auto;
   font-weight: 1;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  font-variation-settings: "wdth" 100;
 }
 
 .center {
   margin: auto;
 }
+
+.scroll-cards__item .card-content {
+  max-height: 12em; /* Adjust as needed for the visible part of the card content */
+  overflow-y: auto;
+  padding-right: 1em; /* To ensure the scrollbar is visible and not overlapping content */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-image {
+  max-width: 300px;
+  margin-right: 20px;
+}
+
