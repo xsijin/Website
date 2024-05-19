@@ -20,12 +20,12 @@
 }
 
 a {
-  font-weight: 500;
-  color: #646cff;
+  font-weight: 400;
+  color: #90553f;
   text-decoration: inherit;
 }
 a:hover {
-  color: #90553f;
+  color: #963D45;
 }
 
 body {
@@ -45,18 +45,18 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 1em;
   line-height: 1.1;
 }
 
 h2 {
-  font-size: 1.25em;
+  font-size: 1em;
   text-transform: uppercase;
   margin: 0;
 }
 
-p {
-  font-size: 0.9em;
+p, h3 {
+  font-size: 0.8em;
   line-height: 1.5;
 }
 
@@ -97,17 +97,17 @@ p {
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (min-width: 650px) {
   h1 {
-    font-size: 1em;
+    font-size: 3.2em;
   }
 
   h2 {
-    font-size: 1em;
+    font-size: 1.25em;
   }
 
-  p {
-    font-size: 0.8em;
+  p, h3 {
+    font-size: 0.9em;
   }
 }
 
@@ -230,19 +230,33 @@ p {
 }
 
 .scroll-cards__item .card-content {
-  max-height: 12em; /* Adjust as needed for the visible part of the card content */
+  max-height: 12em; 
   overflow-y: auto;
-  padding-right: 1em; /* To ensure the scrollbar is visible and not overlapping content */
+  padding-right: 1em; 
 }
 
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: left;
 }
 
 .left-image {
-  max-width: 300px;
+  max-width: 170px;
   margin-right: 20px;
 }
 
+.scroll-cards__item .card-content::-webkit-scrollbar {
+  width: 10px; 
+}
+
+.scroll-cards__item .card-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scroll-cards__item .card-content::-webkit-scrollbar-thumb {
+  background-color: #90553f; /* Color for the scrollbar thumb */
+  border-radius: 10px; /* Round the corners of the scrollbar thumb */
+  border: 2px solid transparent; /* Add a transparent border to create space around the thumb */
+}
