@@ -25,7 +25,7 @@ a {
   text-decoration: inherit;
 }
 a:hover {
-  color: #963D45;
+  color: #963d45;
 }
 
 body {
@@ -55,7 +55,8 @@ h2 {
   margin: 0;
 }
 
-p, h3 {
+p,
+h3 {
   font-size: 0.8em;
   line-height: 1.5;
 }
@@ -106,7 +107,8 @@ p, h3 {
     font-size: 1.25em;
   }
 
-  p, h3 {
+  p,
+  h3 {
     font-size: 0.9em;
   }
 }
@@ -230,25 +232,23 @@ p, h3 {
 }
 
 .scroll-cards__item .card-content {
-  max-height: 12em; 
+  max-height: 12em;
   overflow-y: auto;
-  padding-right: 1em; 
+  padding-right: 1em;
 }
 
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: left;
 }
 
 .left-image {
   max-width: 170px;
-  margin-right: 20px;
 }
 
 .scroll-cards__item .card-content::-webkit-scrollbar {
-  width: 10px; 
+  width: 10px;
 }
 
 .scroll-cards__item .card-content::-webkit-scrollbar-track {
@@ -259,4 +259,13 @@ p, h3 {
   background-color: #90553f; /* Color for the scrollbar thumb */
   border-radius: 10px; /* Round the corners of the scrollbar thumb */
   border: 2px solid transparent; /* Add a transparent border to create space around the thumb */
+}
+
+ul {
+  text-align: left;
+}
+
+hr {
+  border-top: 1px solid #90553f;
+  width: 80%;
 }
