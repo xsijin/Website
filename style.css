@@ -28,18 +28,6 @@ a:hover {
   color: #963d45;
 }
 
-body {
-  padding: 2em;
-  margin: auto;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-  text-align: center;
-  color: white;
-  font-family: "Noto Sans";
-}
-
 body:before {
   content: "";
   display: block;
@@ -60,6 +48,18 @@ body:before {
   background-attachment: fixed;
 }
 
+body {
+  padding: 2em;
+  margin: auto;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  text-align: center;
+  color: white;
+  font-family: "Noto Sans";
+}
+
 h1 {
   font-size: 1em;
   line-height: 1.1;
@@ -75,6 +75,13 @@ p,
 h3 {
   font-size: 0.8em;
   line-height: 1.5;
+}
+
+div.namecard {
+  width: 190px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  margin: auto;
 }
 
 @media screen and (min-width: 37em) {
@@ -133,6 +140,13 @@ h3 {
   p,
   h3 {
     font-size: 0.9em;
+  }
+
+  div.namecard {
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    margin: auto;
   }
 }
 
@@ -293,3 +307,5 @@ hr {
   border-top: 1px solid #90553f;
   width: 80%;
 }
+
+
