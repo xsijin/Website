@@ -28,6 +28,23 @@ a:hover {
   color: #963d45;
 }
 
+.button {
+  font-size: 0.8em;
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: black;
+  color: white;
+  transition-duration: 0.4s;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+.button:hover {
+  background-color: white;
+  color: #90553f;
+  border: 1px solid #90553f;
+}
+
 body:before {
   content: "";
   display: block;
@@ -186,7 +203,7 @@ div.namecard {
   padding: 2em 1.5em;
   min-height: 19em;
   background: #fff;
-  border-radius: 12%;
+  border-radius: 20px;
   box-shadow: 0 2px 40px rgba(0, 0, 0, 0.1);
   width: calc(100% - 5 * var(--offset));
 }
@@ -282,6 +299,8 @@ div.namecard {
 
 .left-image {
   max-width: 170px;
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
 
 .scroll-cards__item .card-content::-webkit-scrollbar {
@@ -293,9 +312,9 @@ div.namecard {
 }
 
 .scroll-cards__item .card-content::-webkit-scrollbar-thumb {
-  background-color: #90553f; /* Color for the scrollbar thumb */
-  border-radius: 10px; /* Round the corners of the scrollbar thumb */
-  border: 2px solid transparent; /* Add a transparent border to create space around the thumb */
+  background-color: #90553f;
+  border-radius: 10px;
+  border: 2px solid transparent;
 }
 
 ul {
@@ -307,5 +326,3 @@ hr {
   border-top: 1px solid #90553f;
   width: 80%;
 }
-
-
