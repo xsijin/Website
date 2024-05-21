@@ -319,7 +319,7 @@ div.namecard {
 .scroll-cards__item .card-content {
   max-height: 12em;
   overflow-y: auto;
-  padding-right: 1em;
+  padding-right: 0.3em;
 }
 
 .scroll-cards__item .card-content::-webkit-scrollbar {
