@@ -37,6 +37,7 @@ a:hover {
   transition-duration: 0.4s;
   border-radius: 20px;
   border: 1px solid black;
+  margin: 1px;
 }
 
 .button:hover {
@@ -101,6 +102,18 @@ div.namecard {
   margin: auto;
 }
 
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-image {
+  max-width: 170px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
 @media screen and (min-width: 37em) {
   h1 {
     font-size: 3em;
@@ -157,6 +170,14 @@ div.namecard {
   p,
   h3 {
     font-size: 0.9em;
+  }
+
+  .left-image {
+    max-width: 260px;
+    max-height: 170px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
   }
 
   div.namecard {
@@ -289,18 +310,6 @@ div.namecard {
   max-height: 12em;
   overflow-y: auto;
   padding-right: 1em;
-}
-
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.left-image {
-  max-width: 170px;
-  padding-top: 5px;
-  padding-bottom: 10px;
 }
 
 .scroll-cards__item .card-content::-webkit-scrollbar {
